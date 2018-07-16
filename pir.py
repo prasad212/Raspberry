@@ -5,7 +5,7 @@ bz=Buzzer(3)
 pir=MotionSensor(26)
 while True:
     pir.wait_for_motion()
-    print('Kela',pir.motion_detected)
+    print('Motion is Detected',pir.motion_detected)
     bz.on()
     sleep(0.5)
     bz.off()
